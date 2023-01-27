@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artsite</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render "layouts/navbar" %>
+    <%= yield %>
+
+    <script>
+      function startVideo(x) {
+        x.play();
+      }
+
+      function stopVideo(x) {
+        x.pause(); 
+        x.currentTime = 0;
+      }
+    </script>
+  </body>
+</html>

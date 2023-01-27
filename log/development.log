@@ -1,0 +1,3190 @@
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for ::1 at 2023-01-26 13:02:26 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.2ms | Allocations: 486)
+Completed 200 OK in 14ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4411)
+
+
+Started GET "/mini-profiler-resources/includes.js?v=35a79b300ab5afa978cb59af0b05e059" for ::1 at 2023-01-26 13:02:26 +0300
+Started GET "/mini-profiler-resources/includes.css?v=35a79b300ab5afa978cb59af0b05e059" for ::1 at 2023-01-26 13:02:26 +0300
+Started GET "/mini-profiler-resources/vendor.js?v=35a79b300ab5afa978cb59af0b05e059" for ::1 at 2023-01-26 13:02:26 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/includes.js"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/vendor.js"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/includes.css"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-26 13:04:13 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.4ms | Allocations: 313)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2749)
+
+
+Started GET "/" for ::1 at 2023-01-26 13:04:14 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.5ms | Allocations: 242)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 1121)
+
+
+Started GET "/" for ::1 at 2023-01-26 13:04:15 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/artistes" for ::1 at 2023-01-26 13:04:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/artistes"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:04:23 +0300
+Processing by ArtsitesController#index as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 1953)
+
+
+  
+ActionController::MissingExactTemplate (ArtsitesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.6.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+actiontext (6.0.6.1) lib/action_text/rendering.rb:19:in `with_renderer'
+actiontext (6.0.6.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `instance_exec'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.6.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.6.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.6.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.6.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:04:28 +0300
+Processing by ArtsitesController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 581)
+
+
+  
+ActionController::MissingExactTemplate (ArtsitesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.6.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+actiontext (6.0.6.1) lib/action_text/rendering.rb:19:in `with_renderer'
+actiontext (6.0.6.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `instance_exec'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.6.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.6.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.6.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.6.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:04:44 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArtsitesController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+  
+ActionController::MissingExactTemplate (ArtsitesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.6.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+actiontext (6.0.6.1) lib/action_text/rendering.rb:19:in `with_renderer'
+actiontext (6.0.6.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `instance_exec'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.6.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.6.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.6.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.6.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:04:45 +0300
+Processing by ArtsitesController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 579)
+
+
+  
+ActionController::MissingExactTemplate (ArtsitesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.6.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.6.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+actiontext (6.0.6.1) lib/action_text/rendering.rb:19:in `with_renderer'
+actiontext (6.0.6.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `instance_exec'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.6.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.6.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.6.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.6.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.6.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.6.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.6.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.6.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.6.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.6.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.6.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.6.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:05:16 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 73)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+Completed 500 Internal Server Error in 619ms (ActiveRecord: 0.0ms | Allocations: 18850)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /Users/keremkahraman/Labs/artsite/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/artsites" for ::1 at 2023-01-26 13:05:27 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 71)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2779)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:05:33 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 71)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2849)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:05:43 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 78)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 2843)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:05:55 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 78)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2861)
+
+
+Started GET "/" for ::1 at 2023-01-26 13:05:59 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.5ms | Allocations: 184)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 907)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:07:57 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2863)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:08:42 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 77)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 4080)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/keremkahraman/Labs/artsite/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actiontext-6.0.6.1/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.6.1/app/views"
+):
+    10:   </head>
+    11: 
+    12:   <body>
+    13:     <% render "layouts/navbar" %>
+    14:     
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13
+Started GET "/artsites" for ::1 at 2023-01-26 13:08:55 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 77)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4081)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/keremkahraman/Labs/artsite/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actiontext-6.0.6.1/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.6.1/app/views"
+):
+    10:   </head>
+    11: 
+    12:   <body>
+    13:     <%= render "layouts/navbar" %>
+    14:     
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13
+Started GET "/artsites" for ::1 at 2023-01-26 13:08:55 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2789)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/keremkahraman/Labs/artsite/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actiontext-6.0.6.1/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.6.1/app/views"
+):
+    10:   </head>
+    11: 
+    12:   <body>
+    13:     <%= render "layouts/navbar" %>
+    14:     
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13
+Started GET "/artsites" for ::1 at 2023-01-26 13:08:56 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2789)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/keremkahraman/Labs/artsite/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actiontext-6.0.6.1/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.6.1/app/views"
+):
+    10:   </head>
+    11: 
+    12:   <body>
+    13:     <%= render "layouts/navbar" %>
+    14:     
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13
+Started GET "/artsites" for ::1 at 2023-01-26 13:08:59 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 77)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 4353)
+
+
+  
+ActionView::Template::Error (Missing partial artsites/_navbar, application/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/keremkahraman/Labs/artsite/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actiontext-6.0.6.1/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.6.1/app/views"
+):
+    10:   </head>
+    11: 
+    12:   <body>
+    13:     <%= render "navbar" %>
+    14:     
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13
+Started GET "/artsites" for ::1 at 2023-01-26 13:09:00 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2793)
+
+
+  
+ActionView::Template::Error (Missing partial artsites/_navbar, application/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/keremkahraman/Labs/artsite/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actiontext-6.0.6.1/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.6.1/app/views"
+):
+    10:   </head>
+    11: 
+    12:   <body>
+    13:     <%= render "navbar" %>
+    14:     
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13
+Started GET "/artsites" for ::1 at 2023-01-26 13:09:02 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2792)
+
+
+  
+ActionView::Template::Error (Missing partial artsites/_navbar, application/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/keremkahraman/Labs/artsite/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actiontext-6.0.6.1/app/views"
+  * "/Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.6.1/app/views"
+):
+    10:   </head>
+    11: 
+    12:   <body>
+    13:     <%= render "navbar" %>
+    14:     
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13
+Started GET "/artsites" for ::1 at 2023-01-26 13:09:15 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 82)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 158)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3248)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:09:56 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms | Allocations: 7471)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:10:02 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 77)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 155)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3220)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:10:42 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 77)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 155)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 3232)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:10:43 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 1938)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:10:44 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1938)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:10:50 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 130)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 155)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 3287)
+
+
+Started GET "/media/art.jpg" for ::1 at 2023-01-26 13:10:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/media/art.jpg"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:10:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:10:50 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:10:50 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:10:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:10:50 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:17:02 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 127)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 155)
+Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 3311)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/art.jpg"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.6.1) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.6.1) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.6.1) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.6.1) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:17:02 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:17:02 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:17:02 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:17:02 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:17:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:17:54 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1636)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2816)
+
+
+  
+ActionView::Template::Error (The asset "assets/images/art" is not present in the asset pipeline.
+):
+     8:         <div class="mains-row">
+     9:         <div class="products-div">
+    10:             <div class="products-presentation">
+    11:             <%= image_tag "assets/images/art", class: "products-img" %>
+    12:             <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+    13:             </div>
+    14:             <p id="products-owner">The Starry Night - Van Gogh</p>
+  
+app/views/artsites/index.html.erb:11
+Started GET "/artsites" for ::1 at 2023-01-26 13:18:09 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1625)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+  
+ActionView::Template::Error (The asset "assets/images/art.jpg" is not present in the asset pipeline.
+):
+     8:         <div class="mains-row">
+     9:         <div class="products-div">
+    10:             <div class="products-presentation">
+    11:             <%= image_tag "assets/images/art.jpg", class: "products-img" %>
+    12:             <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+    13:             </div>
+    14:             <p id="products-owner">The Starry Night - Van Gogh</p>
+  
+app/views/artsites/index.html.erb:11
+Started GET "/artsites" for ::1 at 2023-01-26 13:18:53 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1168)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2349)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="whole-pages-div">
+    <div class="pages-top">
+    
+    <div class="main">
+        <a href="./index.html#" class="btn-up">
+        <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+        </a>
+        <div class="mains-row">
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art"), class: "products-img" %>
+            <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="foot-bar">2022© By @KeremKahraman9</div>
+</div>
+):
+1:    <div class="whole-pages-div">
+2:        <div class="pages-top">
+3:        
+4:        <div class="main">
+5:            <a href="./index.html#" class="btn-up">
+6:            <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+7:            </a>
+8:            <div class="mains-row">
+9:            <div class="products-div">
+10:                <div class="products-presentation">
+11:                <%= image_tag("art"), class: "products-img" %>
+12:                <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+13:                </div>
+14:                <p id="products-owner">The Starry Night - Van Gogh</p>
+15:            </div>
+16:            <div class="products-div">
+17:                <div class="products-presentation">
+18:                <%= image_tag("art"), class: "products-img" %>
+19:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+20:                </div>
+21:                <p id="products-owner">The Starry Night - Van Gogh</p>
+22:            </div>
+23:            <div class="products-div">
+24:                <div class="products-presentation">
+25:                <%= image_tag("art"), class: "products-img" %>
+26:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+27:                </div>
+28:                <p id="products-owner">The Starry Night - Van Gogh</p>
+29:            </div>
+30:            <div class="products-div">
+31:                <div class="products-presentation">
+32:                <%= image_tag("art"), class: "products-img" %>
+33:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+34:                </div>
+35:                <p id="products-owner">The Starry Night - Van Gogh</p>
+36:            </div>
+37:            <div class="products-div">
+38:                <div class="products-presentation">
+39:                <%= image_tag("art"), class: "products-img" %>
+40:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+41:                </div>
+42:                <p id="products-owner">The Starry Night - Van Gogh</p>
+43:            </div>
+44:            </div>
+45:        </div>
+46:        </div>
+47:        <div class="foot-bar">2022© By @KeremKahraman9</div>
+48:    </div>
+  
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+Started GET "/artsites" for ::1 at 2023-01-26 13:19:06 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1168)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2349)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="whole-pages-div">
+    <div class="pages-top">
+    
+    <div class="main">
+        <a href="./index.html#" class="btn-up">
+        <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+        </a>
+        <div class="mains-row">
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="foot-bar">2022© By @KeremKahraman9</div>
+</div>
+):
+1:    <div class="whole-pages-div">
+2:        <div class="pages-top">
+3:        
+4:        <div class="main">
+5:            <a href="./index.html#" class="btn-up">
+6:            <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+7:            </a>
+8:            <div class="mains-row">
+9:            <div class="products-div">
+10:                <div class="products-presentation">
+11:                <%= image_tag("art.jpg"), class: "products-img" %>
+12:                <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+13:                </div>
+14:                <p id="products-owner">The Starry Night - Van Gogh</p>
+15:            </div>
+16:            <div class="products-div">
+17:                <div class="products-presentation">
+18:                <%= image_tag("art.jpg"), class: "products-img" %>
+19:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+20:                </div>
+21:                <p id="products-owner">The Starry Night - Van Gogh</p>
+22:            </div>
+23:            <div class="products-div">
+24:                <div class="products-presentation">
+25:                <%= image_tag("art.jpg"), class: "products-img" %>
+26:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+27:                </div>
+28:                <p id="products-owner">The Starry Night - Van Gogh</p>
+29:            </div>
+30:            <div class="products-div">
+31:                <div class="products-presentation">
+32:                <%= image_tag("art.jpg"), class: "products-img" %>
+33:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+34:                </div>
+35:                <p id="products-owner">The Starry Night - Van Gogh</p>
+36:            </div>
+37:            <div class="products-div">
+38:                <div class="products-presentation">
+39:                <%= image_tag("art.jpg"), class: "products-img" %>
+40:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+41:                </div>
+42:                <p id="products-owner">The Starry Night - Van Gogh</p>
+43:            </div>
+44:            </div>
+45:        </div>
+46:        </div>
+47:        <div class="foot-bar">2022© By @KeremKahraman9</div>
+48:    </div>
+  
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+Started GET "/artsites" for ::1 at 2023-01-26 13:19:07 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1155)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1598)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="whole-pages-div">
+    <div class="pages-top">
+    
+    <div class="main">
+        <a href="./index.html#" class="btn-up">
+        <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+        </a>
+        <div class="mains-row">
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg"), class: "products-img" %>
+            <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="foot-bar">2022© By @KeremKahraman9</div>
+</div>
+):
+1:    <div class="whole-pages-div">
+2:        <div class="pages-top">
+3:        
+4:        <div class="main">
+5:            <a href="./index.html#" class="btn-up">
+6:            <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+7:            </a>
+8:            <div class="mains-row">
+9:            <div class="products-div">
+10:                <div class="products-presentation">
+11:                <%= image_tag("art.jpg"), class: "products-img" %>
+12:                <video id="startvideo"  class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+13:                </div>
+14:                <p id="products-owner">The Starry Night - Van Gogh</p>
+15:            </div>
+16:            <div class="products-div">
+17:                <div class="products-presentation">
+18:                <%= image_tag("art.jpg"), class: "products-img" %>
+19:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+20:                </div>
+21:                <p id="products-owner">The Starry Night - Van Gogh</p>
+22:            </div>
+23:            <div class="products-div">
+24:                <div class="products-presentation">
+25:                <%= image_tag("art.jpg"), class: "products-img" %>
+26:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+27:                </div>
+28:                <p id="products-owner">The Starry Night - Van Gogh</p>
+29:            </div>
+30:            <div class="products-div">
+31:                <div class="products-presentation">
+32:                <%= image_tag("art.jpg"), class: "products-img" %>
+33:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+34:                </div>
+35:                <p id="products-owner">The Starry Night - Van Gogh</p>
+36:            </div>
+37:            <div class="products-div">
+38:                <div class="products-presentation">
+39:                <%= image_tag("art.jpg"), class: "products-img" %>
+40:                <video id="startvideo" class="products-video" onmouseover="startVideo(this)" onmouseout="stopVideo(this)" src="Media/presentation-video.mp4"muted></video>
+41:                </div>
+42:                <p id="products-owner">The Starry Night - Van Gogh</p>
+43:            </div>
+44:            </div>
+45:        </div>
+46:        </div>
+47:        <div class="foot-bar">2022© By @KeremKahraman9</div>
+48:    </div>
+  
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:11: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:25: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:39: syntax error, unexpected ',', expecting ')'
+Started GET "/artsites" for ::1 at 2023-01-26 13:19:13 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 6901)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 158)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 9993)
+
+
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:13 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:13 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:19:20 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1765)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 155)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4851)
+
+
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:20 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:20 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:20 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:20 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:20 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:19:28 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1840)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 155)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4924)
+
+
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:28 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:28 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:28 +0300
+Started GET "/Media/presentation-video.mp4" for ::1 at 2023-01-26 13:19:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/Media/presentation-video.mp4"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 13:21:38 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1292)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 2467)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="whole-pages-div">
+    <div class="pages-top">
+    
+    <div class="main">
+        <a href="./index.html#" class="btn-up">
+        <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+        </a>
+        <div class="mains-row">
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg", class: "products-img") %>
+            <%= video_tag("presentation-video.mp4", class: "products-video"), onmouseover: "startVideo(this)", onmouseout: "stopVideo(this), muted: "muted"" %>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg", class: "products-img") %>
+            <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg", class: "products-img") %>
+            <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg", class: "products-img") %>
+            <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        <div class="products-div">
+            <div class="products-presentation">
+            <%= image_tag("art.jpg", class: "products-img") %>
+            <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+            </div>
+            <p id="products-owner">The Starry Night - Van Gogh</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="foot-bar">2022© By @KeremKahraman9</div>
+</div>
+):
+1:    <div class="whole-pages-div">
+2:        <div class="pages-top">
+3:        
+4:        <div class="main">
+5:            <a href="./index.html#" class="btn-up">
+6:            <ion-icon class="up-icon" name="chevron-up-outline"></ion-icon>
+7:            </a>
+8:            <div class="mains-row">
+9:            <div class="products-div">
+10:                <div class="products-presentation">
+11:                <%= image_tag("art.jpg", class: "products-img") %>
+12:                <%= video_tag("presentation-video.mp4", class: "products-video"), onmouseover: "startVideo(this)", onmouseout: "stopVideo(this), muted: "muted"" %>
+13:                </div>
+14:                <p id="products-owner">The Starry Night - Van Gogh</p>
+15:            </div>
+16:            <div class="products-div">
+17:                <div class="products-presentation">
+18:                <%= image_tag("art.jpg", class: "products-img") %>
+19:                <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+20:                </div>
+21:                <p id="products-owner">The Starry Night - Van Gogh</p>
+22:            </div>
+23:            <div class="products-div">
+24:                <div class="products-presentation">
+25:                <%= image_tag("art.jpg", class: "products-img") %>
+26:                <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+27:                </div>
+28:                <p id="products-owner">The Starry Night - Van Gogh</p>
+29:            </div>
+30:            <div class="products-div">
+31:                <div class="products-presentation">
+32:                <%= image_tag("art.jpg", class: "products-img") %>
+33:                <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+34:                </div>
+35:                <p id="products-owner">The Starry Night - Van Gogh</p>
+36:            </div>
+37:            <div class="products-div">
+38:                <div class="products-presentation">
+39:                <%= image_tag("art.jpg", class: "products-img") %>
+40:                <%= video_tag("presentation-video.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+41:                </div>
+42:                <p id="products-owner">The Starry Night - Van Gogh</p>
+43:            </div>
+44:            </div>
+45:        </div>
+46:        </div>
+47:        <div class="foot-bar">2022© By @KeremKahraman9</div>
+48:    </div>
+  
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/artsites/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/artsites" for ::1 at 2023-01-26 13:22:10 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3673)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 155)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 6752)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 13:22:36 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3667)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 155)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 6749)
+
+
+Started GET "/" for ::1 at 2023-01-26 13:48:45 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.1ms | Allocations: 184)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 849)
+
+
+Started GET "/" for ::1 at 2023-01-26 17:03:43 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.4ms | Allocations: 313)
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2793)
+
+
+Started GET "/" for ::1 at 2023-01-26 17:03:57 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 185)
+Completed 200 OK in 17ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 1283)
+
+
+Started GET "/" for ::1 at 2023-01-26 17:04:02 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/artsites" for ::1 at 2023-01-26 17:04:02 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 6057)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 158)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 9321)
+
+
+Started GET "/artsite" for ::1 at 2023-01-26 17:04:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/artsite"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/invoices?dc=debit" for ::1 at 2023-01-26 17:04:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/invoices"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/index" for ::1 at 2023-01-26 17:04:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-26 17:04:34 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3341)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 5207)
+
+
+Started GET "/index.html" for ::1 at 2023-01-26 17:04:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-27 17:51:31 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.6ms | Allocations: 313)
+Completed 200 OK in 11ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2748)
+
+
+Started GET "/" for ::1 at 2023-01-27 17:51:39 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.1ms | Allocations: 350)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 1194)
+
+
+Started GET "/" for ::1 at 2023-01-27 17:51:45 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/login" for ::1 at 2023-01-27 17:51:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/labs" for ::1 at 2023-01-27 17:51:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/labs"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-27 17:51:51 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started GET "/" for ::1 at 2023-01-27 17:52:35 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/keremkahraman/.rbenv/versions/2.6.10/lib/ruby/gems/2.6.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started GET "/articles" for ::1 at 2023-01-27 17:52:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artisits" for ::1 at 2023-01-27 17:52:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/artisits"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Artsite" for ::1 at 2023-01-27 17:53:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Artsite"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/Artsites" for ::1 at 2023-01-27 17:53:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Artsites"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-27 17:53:16 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 6057)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 158)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 9358)
+
+
+Started GET "/artisite" for ::1 at 2023-01-27 17:59:29 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/artisite"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/artsites" for ::1 at 2023-01-27 22:16:46 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 11645)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 158)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 19387)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:17:07 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3321)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 11083)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:46:48 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 126.4ms | Allocations: 13987)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 155)
+Completed 200 OK in 139ms (Views: 134.3ms | ActiveRecord: 0.0ms | Allocations: 17142)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:47:12 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4557)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 155)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 7706)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:49:43 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 25.9ms | Allocations: 4210)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 72ms (Views: 59.7ms | ActiveRecord: 0.0ms | Allocations: 11602)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:49:54 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4211)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 6178)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:50:19 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4211)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 12160)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:50:28 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 4210)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 12043)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:50:33 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 4211)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 6143)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:51:35 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4210)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 12117)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:52:01 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 4212)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 12966)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:52:22 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4211)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 6178)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 22:55:33 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 4211)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 6137)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:38:43 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 80.6ms | Allocations: 21817)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms | Allocations: 23051)
+
+
+  
+ActionView::Template::Error (The asset "ten.jpg" is not present in the asset pipeline.
+):
+    29:         </div>
+    30:         <div class="products-div">
+    31:             <div class="products-presentation">
+    32:                 <%= image_tag("ten.jpg", class: "products-img") %>
+    33:                 <%= video_tag("four.mp4", class: "products-video", onmouseover: "startVideo(this)", onmouseout: "stopVideo(this)", muted: "muted") %>
+    34:             </div>
+    35:             <p id="products-owner">The Starry Night - Van Gogh</p>
+  
+app/views/artsites/index.html.erb:32
+Started GET "/artsites" for ::1 at 2023-01-27 23:39:29 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 15556)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 158)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.0ms | Allocations: 18004)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:40:48 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 5058)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 11936)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:41:02 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 13388)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:41:08 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5058)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 6871)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:44:17 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 11899)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:46:10 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 5437)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 155)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 8566)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:46:35 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 5404)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 155)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 8532)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:46:49 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 5404)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 155)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 8522)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:47:13 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 21.7ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 12449)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:47:29 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.0ms | Allocations: 12962)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:47:30 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 5058)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 6946)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:47:50 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms | Allocations: 12434)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:48:57 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 13908)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:50:20 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 13897)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:51:14 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms | Allocations: 14345)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:52:12 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.0ms | Allocations: 12997)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:53:38 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 14806)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:55:33 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 12910)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:58:50 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 40ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 14222)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:59:04 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 5058)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 13868)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:59:13 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.0ms | Allocations: 13447)
+
+
+Started GET "/artsites" for ::1 at 2023-01-27 23:59:31 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 13423)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:04:23 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 44ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 13835)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:04:56 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 13449)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:05:08 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms | Allocations: 13311)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:05:37 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 13019)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:05:42 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 6986)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:06:35 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 5058)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 6981)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:08:33 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 5058)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 7028)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:15:29 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 19206)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 158)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 24381)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:15:32 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5060)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7000)
+
+
+Started GET "/artsites" for ::1 at 2023-01-28 00:15:41 +0300
+Processing by ArtsitesController#index as HTML
+  Rendering artsites/index.html.erb within layouts/application
+  Rendered artsites/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 5059)
+  Rendered layouts/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 6989)
+
+

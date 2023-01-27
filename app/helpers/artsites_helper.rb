@@ -1,0 +1,2 @@
+module ArtsitesHelper
+end
