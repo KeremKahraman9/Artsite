@@ -4,4 +4,4 @@ Hi all,
 This is my first repo. Actually, in this file my purpose is to learn the ruby on rails structure and create a repo on GitHub. Basically the site looks like an art gallery, you can display your painting and some videos. Of course, I'm still in the development stage. 
 Hope you like it.
 
-<--|Stay safe and bugless|-->
+<--|Stay high and bugless|-->
