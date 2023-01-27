@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+![repo_cover](https://user-images.githubusercontent.com/92033807/215205758-daa22277-9b74-4d06-9080-69f069f7adae.jpg)
