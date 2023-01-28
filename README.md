@@ -5,3 +5,8 @@ this is my first repo. Actually, in this file my purpose is to learn the ruby on
 Hope you like it.
 
 <--|Stay high and bugless|-->
+
+
+Review:
+https://user-images.githubusercontent.com/92033807/215267022-fff99776-f757-4844-b0cb-b8ab4351b23b.mov
+
