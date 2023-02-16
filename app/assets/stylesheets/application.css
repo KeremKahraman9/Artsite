@@ -21,7 +21,7 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif; 
     scroll-behavior: smooth;
-    background-color: #f3f6fa;
+    /* background-color: #f3f6fa; */
   }
   .whole-pages-div {
     width: 100%;
