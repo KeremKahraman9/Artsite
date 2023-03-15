@@ -58,6 +58,7 @@
     color: #bb2649;
     text-decoration: none;
     letter-spacing: 2mm;
+    cursor: pointer;
   }
   .navbars-menu {
     display: flex;
