@@ -1,27 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-
  * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif; 
     scroll-behavior: smooth;
-    /* background-color: #f3f6fa; */
+    height: auto;
   }
   .whole-pages-div {
     width: 100%;
@@ -36,198 +19,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .nav-bar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(237, 242, 247, 0.596);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(5px);
-    position: sticky;
-    top: 0px;
-    user-select: none;
-    z-index: 500;
-  }
-  .pages-title {
-    font-family: Roslindale,'Times New Roman',sans-serif;
-    font-size: 30px;
-    margin-left: 40px;
-    cursor: default;
-    color: #bb2649;
-    text-decoration: none;
-    letter-spacing: 2mm;
-    cursor: pointer;
-  }
-  .navbars-menu {
-    display: flex;
-    margin-left: 40px;
-    justify-content: center;
-    align-items: center;
-  }
-  .menus-icon {
-    width: 24px;
-    height: 13px;
-    position: relative;
-  }
-  .icons-line {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    border-radius: 200px;
-    background-color: #1f1f1f;
-    transition: all 0.2s ease;
-  }
-  .icons-top {
-    top: 0px;
-  }
-  .icons-bottom {
-    bottom: 0px;
-  }
-  #dropdown-menus-cb:checked ~ label .menus-icon .icons-top {
-    rotate: 45deg;
-    top: 5px;
-  }
-  #dropdown-menus-cb:checked ~ label .menus-icon .icons-bottom {
-    rotate: -45deg;
-    bottom: 6px;
-  }
-  .navbars-menu li {
-    list-style-type: none;
-  }
-  .navbars-menu li a {
-    color: black;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    font-weight: bold;
-  }
-  .menus-link {
-    color: black;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    font-weight: bold;
-  }
-  .up-line {
-    height: 15px;
-    width: 1px;
-    background-color: #000000;
-    border-radius: 20px;
-    margin: 10px 15px 10px 15px;
-  }
-  .whole-menus-div {
-    margin: 20px;
-    font-size: 1.1em;
-    color: white;
-    position: relative;
-    display: none;
-  }
-  #dropdown-menus-cb {
-    display: none;
-  }
-  
-  .single-menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 220px;
-    height: 48px;
-    padding: 10px;
-    background-color: #fffffff1;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .single-menu-item:hover {
-    background-color: #e1e1e1;
-  }
-  .mis-l {
-    display: flex;
-    align-items: center;
-  }
-  .ml-2 {
-    margin-left: 8px;
-  }
-  .items-menu {
-    margin-top: 10px;
-    opacity: 0;
-    transform: translateY(-18px);
-    transition: all 0.2s ease;
-    visibility: hidden;
-    max-height: 0px;
-    top: 45px;
-    right: 0px;
-    position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  #dropdown-menus-cb:checked ~ .items-menu {
-    transform: translateY(0px);
-    opacity: 1;
-    visibility: visible;
-    max-height: 900px;
-  }
-  .right-row-icon {
-    transition: all 0.2s ease;
-  }
-  #dropdown-menus-cb:checked ~ label .single-menu-item .right-row-icon {
-    transform: rotateZ(90deg);
-  }
-  .items-menu .single-menu-item {
-    border-radius: 0px;
-  }
-  .long-line {
-    width: 100%;
-    height: 1px;
-    background-color: #aaa;
-  }
-  .icon {
-    font-size: 18px;
-    margin-top: 2px;
-  }
-  .single-menu-item:hover .mis-l .items-title {
-    transform: translateX(4px);
-  }
-  .items-title {
-    transition: all 0.2s ease;
-  }
-
-  @media (max-width: 723px) {
-    .navbars-menu {
-      display: none;
-    }
-    .whole-menus-div {
-      display: flex;
-      margin: 0px;
-    }
-    .nav-bar {
-      justify-content: space-between;
-      margin: 0px 10px 0px 10px;
-    }
-    .pages-title {
-      margin-left: 13px;
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 0px;
-      text-decoration: none;
-    }
-  }
-  .main {
-    width: 100%;
-    padding: 10px;
-    /* background-color: rgb(243, 246, 250); */
-    background-color: #f3f6fa;
-  }
-  .btn-up {
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  .up-icon {
-    font-size: 26px;
   }
   .mains-row {
     display: flex;
@@ -253,11 +44,6 @@
     border-radius: 15px;
     overflow: hidden;
     perspective: 1px;
-  }
-  @media (max-width: 1024px) {
-    .products-div {
-      width: 98%;
-    }
   }
   .products-presentation {
     width: 100%;
@@ -295,7 +81,6 @@
   .products-div:hover .products-presentation .products-video {
     opacity: 1;
   }
-  
   #products-owner {
     font-size: 12px;
     white-space: nowrap;
@@ -312,30 +97,7 @@
     justify-content: center;
     background-color: #e8e8e8;
     padding: 10px;
-    /* width: 100%;
-    height: 50px;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase; */
   }
-  
-  @media (max-width: 1000px) {
-    .products-div{
-      margin-bottom: 14px;
-    }
-    #products-owner{
-      font-size: 14px;
-      margin-top: 1.4mm;
-    }
-  }
-
   #back-to-top {
     display: none;
     position: fixed;
@@ -349,4 +111,81 @@
   }
   #back-to-top:hover {
     opacity: 0.5;
+  }
+  @media (max-width: 1024px) {
+    .products-div{
+      margin-bottom: 14px;
+      width: 100%;
+    }
+    #products-owner{
+      font-size: 14px;
+      margin-top: 1.4mm;
+    }
+  }
+
+
+
+  /* navbar css */
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(237, 242, 247, 0.596);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0px;
+    user-select: none;
+    z-index: 500;
+  }
+  .pages-title {
+    font-family: Roslindale,'Times New Roman',sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+    cursor: default;
+    color: #bb2649;
+    text-decoration: none;
+    letter-spacing: 2mm;
+    cursor: pointer;
+  }
+  .navbars-menu {
+    display: flex;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbars-menu li {
+    list-style-type: none;
+  }
+  .navbars-menu li a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-weight: bold;
+  }
+  .up-line {
+    height: 15px;
+    width: 1px;
+    background-color: #000000;
+    border-radius: 20px;
+    margin: 10px 15px 10px 15px;
+  }
+  .long-line {
+    width: 100%;
+    height: 1px;
+    background-color: #aaa;
+  }
+  .icon {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+  .main {
+    width: 100%;
+    padding: 10px;
+    /* background-color: rgb(243, 246, 250); */
+    background-color: #f3f6fa;
+  }
+  .up-icon {
+    font-size: 26px;
   }
