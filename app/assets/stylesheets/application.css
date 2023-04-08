@@ -6,6 +6,13 @@
     scroll-behavior: smooth;
     height: auto;
   }
+  .main {
+    width: 100%;
+    padding: 10px;
+    /* background-color: rgb(243, 246, 250); */
+    /* background-color: rgb(248, 248, 248); */
+    background-color: rgb(255, 255, 255);
+  }
   .whole-pages-div {
     width: 100%;
     min-height: 100vh;
@@ -91,13 +98,6 @@
     margin-left: 1px;
     text-transform: uppercase;
   }
-  .foot-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #e8e8e8;
-    padding: 10px;
-  }
   #back-to-top {
     display: none;
     position: fixed;
@@ -130,33 +130,35 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: rgba(237, 242, 247, 0.596);
+    padding: 15px;
+    /* background-color: rgba(248, 248, 248, 0.696); */
+    background-color: rgba(255, 255, 255, 0.696);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(5px);
-    position: fixed;
     top: 0px;
     user-select: none;
     z-index: 500;
+    justify-content: center;
   }
   .pages-title {
-    font-family: Roslindale,'Times New Roman',sans-serif;
-    font-size: 30px;
-    margin-left: 40px;
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
     cursor: default;
     color: #bb2649;
     text-decoration: none;
-    letter-spacing: 2mm;
+    letter-spacing: 1mm;
     cursor: pointer;
   }
   .navbars-menu {
     display: flex;
-    margin-left: 40px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
   .navbars-menu li {
     list-style-type: none;
+    width: 90px;
+    text-align: right;
   }
   .navbars-menu li a {
     color: black;
@@ -180,12 +182,18 @@
     font-size: 18px;
     margin-top: 2px;
   }
-  .main {
-    width: 100%;
-    padding: 10px;
-    /* background-color: rgb(243, 246, 250); */
-    background-color: #f3f6fa;
-  }
   .up-icon {
     font-size: 26px;
+  }
+
+
+  /* footbar css */
+
+  .foot-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgb(248,248,248);
+
   }
