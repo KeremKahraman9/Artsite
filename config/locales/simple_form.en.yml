@@ -29,7 +29,9 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-default:
-  home: "Home"
-  contact: "Contact"
-  editorial: "EDITORIAL"
+simple_form:
+  default:
+    home: "Home"
+    contact: "Contact"
+    editorial: "EDITORIAL"
+    back_to_top: "Back To Top"
