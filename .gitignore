@@ -67,3 +67,9 @@ node_modules/
 
 # Local Netlify folder
 .netlify
+
+#Api and Service Keys, Tokens
+config/secrets.yml
+
+#Additions
+config/database.yml
