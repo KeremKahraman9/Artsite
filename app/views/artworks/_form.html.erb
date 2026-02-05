@@ -1,0 +1,59 @@
+<%= form_with model: artwork do |f| %>
+  <% if artwork.errors.any? %>
+    <div style="background:rgba(231,76,60,0.1);border:1px solid rgba(231,76,60,0.3);border-radius:var(--radius-md);padding:var(--space-lg);margin-bottom:var(--space-xl);">
+      <p style="color:var(--color-highlight);font-weight:600;margin-bottom:var(--space-sm);"><%= pluralize(artwork.errors.count, "error") %> prevented this artwork from being saved:</p>
+      <ul style="color:var(--color-highlight);font-size:0.9rem;padding-left:var(--space-lg);">
+        <% artwork.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title, class: "form-label" %>
+    <%= f.text_field :title, class: "form-input", placeholder: "Enter artwork title" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description, class: "form-label" %>
+    <%= f.text_area :description, class: "form-textarea", placeholder: "Describe your artwork...", rows: 5 %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :category_id, "Category", class: "form-label" %>
+    <%= f.collection_select :category_id, @categories, :id, :name, { prompt: "Select a category" }, class: "form-select" %>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <%= f.label :medium, class: "form-label" %>
+      <%= f.text_field :medium, class: "form-input", placeholder: "e.g. Oil on Canvas" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :dimensions, class: "form-label" %>
+      <%= f.text_field :dimensions, class: "form-input", placeholder: "e.g. 24 x 36 in" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :year, class: "form-label" %>
+    <%= f.number_field :year, class: "form-input", placeholder: "Year created", min: 1000, max: Date.current.year, style: "max-width:200px;" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image, class: "form-label" %>
+    <%= f.file_field :image, accept: "image/*", class: "form-input" %>
+    <p class="form-hint">Upload a high-quality image of your artwork (JPG, PNG, WebP)</p>
+    <% if artwork.image.attached? %>
+      <div style="margin-top:var(--space-md);">
+        <%= image_tag artwork.image.variant(resize_to_fill: [200, 200]), style: "border-radius:var(--radius-md);" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div style="display:flex;gap:var(--space-md);margin-top:var(--space-2xl);">
+    <%= f.submit artwork.persisted? ? "Update Artwork" : "Publish Artwork", class: "btn btn-primary btn-lg" %>
+    <%= link_to "Cancel", artwork.persisted? ? artwork_path(artwork) : artworks_path, class: "btn btn-outline btn-lg" %>
+  </div>
+<% end %>

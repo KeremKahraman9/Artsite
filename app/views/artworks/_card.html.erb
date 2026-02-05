@@ -1,0 +1,27 @@
+<%= link_to artwork_path(artwork), class: "card", style: "text-decoration:none;" do %>
+  <div class="card-image">
+    <% if artwork.image.attached? %>
+      <%= image_tag artwork.image.variant(resize_to_fill: [600, 750]), alt: artwork.title %>
+    <% else %>
+      <div style="width:100%;height:100%;background:linear-gradient(<%= rand(0..360) %>deg, #2a2a3e, #1a1a2e);display:flex;align-items:center;justify-content:center;">
+        <span style="font-family:var(--font-display);font-size:3rem;opacity:0.2;color:var(--color-accent);"><%= artwork.title.first(2).upcase %></span>
+      </div>
+    <% end %>
+    <% if artwork.featured? %>
+      <span class="card-badge">Featured</span>
+    <% end %>
+    <div class="card-overlay">
+      <span class="btn btn-primary btn-sm">View Artwork</span>
+    </div>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title"><%= artwork.title %></h3>
+    <p class="card-subtitle">by <%= artwork.artist.display_name %> &middot; <%= artwork.category.name %></p>
+    <div class="card-meta">
+      <span class="card-time"><%= artwork.medium || "Mixed Media" %></span>
+      <% if artwork.active_auction %>
+        <span class="card-price"><%= number_to_currency(artwork.active_auction.current_price) %></span>
+      <% end %>
+    </div>
+  </div>
+<% end %>

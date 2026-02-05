@@ -1,56 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Teko:wght@500&display=swap" rel="stylesheet">
-    <title>Artsite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= content_for?(:title) ? "#{yield(:title)} | Artsite" : "Artsite - Art Gallery & Auctions" %></title>
+    <meta name="description" content="Discover extraordinary artworks and bid on exclusive pieces in our curated auction platform.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <%= render "layouts/navbar" %>
-    <%= render "layouts/back_to_top" %>
+
+    <% if notice.present? || alert.present? %>
+      <div class="flash-container">
+        <% if notice.present? %>
+          <div class="flash-message flash-notice"><%= notice %></div>
+        <% end %>
+        <% if alert.present? %>
+          <div class="flash-message flash-alert"><%= alert %></div>
+        <% end %>
+      </div>
+    <% end %>
+
     <%= yield %>
 
-    <script>
-      function startVideo(x) {
-        x.play();
-      }
-
-      function stopVideo(x) {
-        x.pause(); 
-        x.currentTime = 0;
-      }
-
-       // Sayfanın en üstüne dönme fonksiyonu
-      function scrollToTop() {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        }
-
-        // Sayfa yüklendiğinde back to top butonunu görünür hale getirme kodları
-        window.addEventListener('scroll', function() {
-          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          if (scrollTop > 100) {
-            document.getElementById('back-to-top').style.display = 'block';
-          } else {
-            document.getElementById('back-to-top').style.display = 'none';
-          }
-        });
-        
-        // Back to top butonuna tıklama olayını dinleme kodları
-        document.getElementById('back-to-top').addEventListener('click', function(event) {
-          event.preventDefault();
-          scrollToTop();
-        });
-    </script>
+    <%= render "layouts/footer" %>
   </body>
 </html>

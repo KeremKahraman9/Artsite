@@ -1,0 +1,124 @@
+<% content_for(:title, "Discover & Collect Art") %>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-bg">
+    <div style="width:100%;height:100%;background:linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+  </div>
+  <div class="hero-content">
+    <p class="section-label">Welcome to Artsite</p>
+    <h1 class="hero-title">
+      Where Art Meets<br>
+      <span class="accent">Auction</span>
+    </h1>
+    <p class="hero-subtitle">
+      Discover extraordinary artworks from talented artists worldwide.
+      Bid on exclusive pieces in our curated auction platform.
+    </p>
+    <div class="hero-actions">
+      <%= link_to "Explore Gallery", artworks_path, class: "btn btn-primary btn-lg" %>
+      <%= link_to "Live Auctions", auctions_path, class: "btn btn-outline btn-lg" %>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span class="hero-stat-value"><%= Artwork.published.count %></span>
+        <span class="hero-stat-label">Artworks</span>
+      </div>
+      <div>
+        <span class="hero-stat-value"><%= User.artist.count %></span>
+        <span class="hero-stat-label">Artists</span>
+      </div>
+      <div>
+        <span class="hero-stat-value"><%= Auction.live.count %></span>
+        <span class="hero-stat-label">Live Auctions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Artworks -->
+<% if @featured_artworks.any? %>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-label">Curated Selection</p>
+          <h2>Featured Artworks</h2>
+        </div>
+        <%= link_to "View All", artworks_path, class: "btn btn-outline btn-sm" %>
+      </div>
+
+      <div class="artwork-grid-featured" data-controller="gallery">
+        <% @featured_artworks.each do |artwork| %>
+          <div class="gallery-item" data-gallery-target="item">
+            <%= render "artworks/card", artwork: artwork %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+<% end %>
+
+<!-- Live Auctions -->
+<% if @live_auctions.any? %>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-label">Bid Now</p>
+          <h2>Live Auctions</h2>
+        </div>
+        <%= link_to "All Auctions", auctions_path, class: "btn btn-outline btn-sm" %>
+      </div>
+
+      <div class="auction-grid">
+        <% @live_auctions.each do |auction| %>
+          <%= render "auctions/card", auction: auction %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+<% end %>
+
+<!-- Recent Artworks -->
+<% if @recent_artworks.any? %>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-label">Just Added</p>
+          <h2>Recent Artworks</h2>
+        </div>
+        <%= link_to "Browse All", artworks_path, class: "btn btn-outline btn-sm" %>
+      </div>
+
+      <div class="artwork-grid" data-controller="gallery">
+        <% @recent_artworks.each do |artwork| %>
+          <div class="gallery-item" data-gallery-target="item">
+            <%= render "artworks/card", artwork: artwork %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+<% end %>
+
+<!-- Categories -->
+<% if @categories.any? %>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-label">Browse by</p>
+          <h2>Categories</h2>
+        </div>
+      </div>
+
+      <div class="category-pills">
+        <% @categories.each do |category| %>
+          <%= link_to category.name, category_path(category), class: "category-pill" %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+<% end %>

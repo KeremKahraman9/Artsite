@@ -1,0 +1,92 @@
+<% content_for(:title, "Dashboard") %>
+
+<div class="page-content">
+  <div class="container">
+    <div class="dashboard-header">
+      <p class="section-label">Your Account</p>
+      <h1 class="dashboard-welcome">Welcome, <%= current_user.first_name %></h1>
+    </div>
+
+    <!-- Stats -->
+    <div class="dashboard-grid">
+      <div class="stat-card">
+        <div class="stat-card-value"><%= @my_artworks.count %></div>
+        <div class="stat-card-label">My Artworks</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-value"><%= @my_auctions.count %></div>
+        <div class="stat-card-label">My Auctions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-value"><%= @my_bids.count %></div>
+        <div class="stat-card-label">My Bids</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-value"><%= @watched_auctions.count %></div>
+        <div class="stat-card-label">Watching</div>
+      </div>
+    </div>
+
+    <!-- My Artworks -->
+    <% if current_user.can_sell? %>
+      <div class="section">
+        <div class="section-header">
+          <h2>My Artworks</h2>
+          <%= link_to "Add New", new_artwork_path, class: "btn btn-primary btn-sm" %>
+        </div>
+
+        <% if @my_artworks.any? %>
+          <div class="artwork-grid">
+            <% @my_artworks.limit(6).each do |artwork| %>
+              <%= render "artworks/card", artwork: artwork %>
+            <% end %>
+          </div>
+        <% else %>
+          <div class="empty-state">
+            <p class="empty-state-text">You haven't added any artworks yet.</p>
+            <%= link_to "Add Your First Artwork", new_artwork_path, class: "btn btn-primary" %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+    <!-- My Active Bids -->
+    <div class="section">
+      <div class="section-header">
+        <h2>Recent Bids</h2>
+      </div>
+
+      <% if @my_bids.any? %>
+        <% @my_bids.each do |bid| %>
+          <div class="bid-item">
+            <div>
+              <span class="bid-item-user"><%= link_to bid.auction.artwork.title, auction_path(bid.auction) %></span>
+              <span class="bid-item-time" style="display:block;"><%= time_ago_in_words(bid.created_at) %> ago</span>
+            </div>
+            <span class="bid-item-amount"><%= number_to_currency(bid.amount) %></span>
+          </div>
+        <% end %>
+      <% else %>
+        <div class="empty-state">
+          <p class="empty-state-text">You haven't placed any bids yet.</p>
+          <%= link_to "Browse Auctions", auctions_path, class: "btn btn-outline" %>
+        </div>
+      <% end %>
+    </div>
+
+    <!-- Watched Auctions -->
+    <% if @watched_auctions.any? %>
+      <div class="section">
+        <div class="section-header">
+          <h2>Watching</h2>
+        </div>
+
+        <div class="auction-grid">
+          <% @watched_auctions.each do |auction| %>
+            <%= render "auctions/card", auction: auction %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

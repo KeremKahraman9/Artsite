@@ -1,0 +1,143 @@
+<% content_for(:title, @artwork.title) %>
+
+<div class="page-content">
+  <div class="container">
+    <div class="artwork-detail">
+      <!-- Image -->
+      <div class="artwork-image-main">
+        <% if @artwork.image.attached? %>
+          <%= image_tag @artwork.image.variant(resize_to_limit: [1200, 1600]), alt: @artwork.title %>
+        <% else %>
+          <div style="width:100%;aspect-ratio:3/4;background:linear-gradient(135deg, #2a2a3e, #1a1a2e);display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:var(--font-display);font-size:5rem;opacity:0.15;color:var(--color-accent);"><%= @artwork.title.first(2).upcase %></span>
+          </div>
+        <% end %>
+      </div>
+
+      <!-- Info -->
+      <div class="artwork-info">
+        <div class="artwork-artist">
+          <div class="artwork-artist-avatar">
+            <div style="width:100%;height:100%;background:var(--color-accent);display:flex;align-items:center;justify-content:center;font-size:0.8rem;color:var(--color-bg);font-weight:700;">
+              <%= @artwork.artist.first_name.first %><%= @artwork.artist.last_name.first %>
+            </div>
+          </div>
+          <div>
+            <span class="artwork-artist-name"><%= @artwork.artist.full_name %></span>
+            <span class="text-muted" style="display:block;font-size:0.75rem;">@<%= @artwork.artist.username %></span>
+          </div>
+        </div>
+
+        <h1 class="artwork-title-large"><%= @artwork.title %></h1>
+
+        <% if @artwork.description.present? %>
+          <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-xl);">
+            <%= @artwork.description %>
+          </p>
+        <% end %>
+
+        <div class="artwork-details-grid">
+          <div class="artwork-detail-item">
+            <label>Category</label>
+            <span><%= @artwork.category.name %></span>
+          </div>
+          <div class="artwork-detail-item">
+            <label>Medium</label>
+            <span><%= @artwork.medium || "Not specified" %></span>
+          </div>
+          <div class="artwork-detail-item">
+            <label>Dimensions</label>
+            <span><%= @artwork.dimensions || "Not specified" %></span>
+          </div>
+          <div class="artwork-detail-item">
+            <label>Year</label>
+            <span><%= @artwork.year || "Not specified" %></span>
+          </div>
+        </div>
+
+        <% if current_user == @artwork.artist || current_user&.admin? %>
+          <div class="flex gap-md mt-lg">
+            <%= link_to "Edit", edit_artwork_path(@artwork), class: "btn btn-outline btn-sm" %>
+            <%= link_to "Delete", artwork_path(@artwork), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "btn btn-danger btn-sm" %>
+            <% unless @active_auction %>
+              <%= link_to "Create Auction", new_artwork_auction_path(@artwork), class: "btn btn-primary btn-sm" %>
+            <% end %>
+          </div>
+        <% end %>
+
+        <!-- Auction Panel -->
+        <% if @active_auction %>
+          <div class="auction-panel">
+            <div class="auction-price-row">
+              <div>
+                <span class="auction-current-label">Current Bid</span>
+                <div class="auction-current-price"><%= number_to_currency(@active_auction.current_price) %></div>
+              </div>
+              <div style="text-align:right;">
+                <span class="auction-current-label"><%= @active_auction.bids_count %> Bids</span>
+              </div>
+            </div>
+
+            <div class="auction-countdown" data-controller="countdown" data-countdown-deadline-value="<%= @active_auction.ends_at.iso8601 %>">
+              <div class="countdown-unit">
+                <span class="countdown-value" data-countdown-target="days">--</span>
+                <span class="countdown-label">Days</span>
+              </div>
+              <div class="countdown-unit">
+                <span class="countdown-value" data-countdown-target="hours">--</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <div class="countdown-unit">
+                <span class="countdown-value" data-countdown-target="minutes">--</span>
+                <span class="countdown-label">Minutes</span>
+              </div>
+              <div class="countdown-unit">
+                <span class="countdown-value" data-countdown-target="seconds">--</span>
+                <span class="countdown-label">Seconds</span>
+              </div>
+            </div>
+
+            <% if user_signed_in? && current_user != @active_auction.seller %>
+              <div data-controller="bid" data-bid-minimum-value="<%= @active_auction.minimum_bid %>" data-bid-current-value="<%= @active_auction.current_price %>">
+                <%= form_with model: Bid.new, url: auction_bids_path(@active_auction), class: "bid-form", data: { action: "submit->bid#validate" } do |f| %>
+                  <div class="bid-input-group">
+                    <span class="currency">$</span>
+                    <button type="button" class="bid-adjust" data-action="click->bid#decrement">-</button>
+                    <%= f.number_field :amount, step: 0.01, min: @active_auction.minimum_bid, value: @active_auction.minimum_bid, class: "", data: { bid_target: "amount" } %>
+                    <button type="button" class="bid-adjust" data-action="click->bid#increment">+</button>
+                  </div>
+                  <%= f.submit "Place Bid", class: "btn btn-primary" %>
+                <% end %>
+                <p class="form-hint mt-sm">Minimum bid: <%= number_to_currency(@active_auction.minimum_bid) %></p>
+                <div class="form-error hidden" data-bid-target="error"></div>
+              </div>
+            <% elsif !user_signed_in? %>
+              <p style="color:var(--color-text-muted);margin-top:var(--space-lg);">
+                <%= link_to "Sign in", new_user_session_path %> to place a bid.
+              </p>
+            <% end %>
+
+            <%= link_to "View Full Auction", auction_path(@active_auction), class: "btn btn-outline btn-sm mt-lg" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Related -->
+    <% if @related_artworks.any? %>
+      <div class="related-section">
+        <div class="section-header">
+          <div>
+            <p class="section-label">More in <%= @artwork.category.name %></p>
+            <h2>Related Artworks</h2>
+          </div>
+        </div>
+        <div class="artwork-grid">
+          <% @related_artworks.each do |artwork| %>
+            <%= render "artworks/card", artwork: artwork %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
