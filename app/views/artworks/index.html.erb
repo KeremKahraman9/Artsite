@@ -1,0 +1,51 @@
+<% content_for(:title, "Gallery") %>
+
+<div class="page-content">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Explore</p>
+        <h1>Gallery</h1>
+      </div>
+      <% if user_signed_in? && current_user.can_sell? %>
+        <%= link_to "Add Artwork", new_artwork_path, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+
+    <div class="category-pills">
+      <%= link_to "All", artworks_path, class: "category-pill #{'active' unless params[:category]}" %>
+      <% @categories.each do |cat| %>
+        <%= link_to cat.name, artworks_path(category: cat.slug), class: "category-pill #{'active' if params[:category] == cat.slug}" %>
+      <% end %>
+    </div>
+
+    <%= search_form_for @q, url: artworks_path, html: { class: "mb-lg", style: "margin-bottom:2rem;" } do |f| %>
+      <div style="display:flex;gap:1rem;align-items:center;">
+        <%= f.search_field :title_or_description_cont, placeholder: "Search artworks...", class: "form-input", style: "max-width:400px;" %>
+        <%= f.submit "Search", class: "btn btn-outline btn-sm" %>
+      </div>
+    <% end %>
+
+    <% if @artworks.any? %>
+      <div class="artwork-grid" data-controller="gallery">
+        <% @artworks.each do |artwork| %>
+          <div class="gallery-item" data-gallery-target="item">
+            <%= render "artworks/card", artwork: artwork %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="pagination-wrapper">
+        <%== pagy_nav(@pagy) %>
+      </div>
+    <% else %>
+      <div class="empty-state">
+        <div class="empty-state-icon">&#9898;</div>
+        <p class="empty-state-text">No artworks found. Check back soon for new additions.</p>
+        <% if user_signed_in? && current_user.can_sell? %>
+          <%= link_to "Add First Artwork", new_artwork_path, class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<% content_for(:title, @category.name) %>
+
+<div class="page-content">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Category</p>
+        <h1><%= @category.name %></h1>
+      </div>
+      <%= link_to "All Categories", artworks_path, class: "btn btn-outline btn-sm" %>
+    </div>
+
+    <% if @category.description.present? %>
+      <p style="color:var(--color-text-secondary);margin-bottom:var(--space-2xl);max-width:600px;line-height:1.7;">
+        <%= @category.description %>
+      </p>
+    <% end %>
+
+    <% if @artworks.any? %>
+      <div class="artwork-grid" data-controller="gallery">
+        <% @artworks.each do |artwork| %>
+          <div class="gallery-item" data-gallery-target="item">
+            <%= render "artworks/card", artwork: artwork %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="pagination-wrapper">
+        <%== pagy_nav(@pagy) %>
+      </div>
+    <% else %>
+      <div class="empty-state">
+        <p class="empty-state-text">No artworks in this category yet.</p>
+        <%= link_to "Browse All", artworks_path, class: "btn btn-outline" %>
+      </div>
+    <% end %>
+  </div>
+</div>

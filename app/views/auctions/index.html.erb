@@ -1,0 +1,45 @@
+<% content_for(:title, "Auctions") %>
+
+<div class="page-content">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Bid & Collect</p>
+        <h1>Auctions</h1>
+      </div>
+    </div>
+
+    <div class="filter-tabs">
+      <%= link_to "Live", auctions_path(filter: "ending_soon"), class: "filter-tab #{'active' if @filter == 'live' || @filter == 'ending_soon'}" %>
+      <%= link_to "Upcoming", auctions_path(filter: "upcoming"), class: "filter-tab #{'active' if @filter == 'upcoming'}" %>
+      <%= link_to "Ended", auctions_path(filter: "ended"), class: "filter-tab #{'active' if @filter == 'ended'}" %>
+    </div>
+
+    <% if @auctions.any? %>
+      <div class="auction-grid">
+        <% @auctions.each do |auction| %>
+          <%= render "auctions/card", auction: auction %>
+        <% end %>
+      </div>
+
+      <div class="pagination-wrapper">
+        <%== pagy_nav(@pagy) %>
+      </div>
+    <% else %>
+      <div class="empty-state">
+        <div class="empty-state-icon">&#128268;</div>
+        <p class="empty-state-text">
+          <% case @filter %>
+          <% when "upcoming" %>
+            No upcoming auctions at the moment.
+          <% when "ended" %>
+            No recently ended auctions.
+          <% else %>
+            No live auctions right now. Check back soon!
+          <% end %>
+        </p>
+        <%= link_to "Browse Gallery", artworks_path, class: "btn btn-outline" %>
+      </div>
+    <% end %>
+  </div>
+</div>
