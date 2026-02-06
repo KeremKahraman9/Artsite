@@ -3,7 +3,6 @@
 <div class="page-content">
   <div class="container">
     <div class="artwork-detail">
-      <!-- Image -->
       <div class="artwork-image-main">
         <% if @artwork.image.attached? %>
           <%= image_tag @artwork.image.variant(resize_to_limit: [1200, 1600]), alt: @artwork.title %>
@@ -14,7 +13,6 @@
         <% end %>
       </div>
 
-      <!-- Info -->
       <div class="artwork-info">
         <div class="artwork-artist">
           <div class="artwork-artist-avatar">
@@ -65,7 +63,6 @@
           </div>
         <% end %>
 
-        <!-- Auction Panel -->
         <% if @active_auction %>
           <div class="auction-panel">
             <div class="auction-price-row">
@@ -123,7 +120,6 @@
       </div>
     </div>
 
-    <!-- Related -->
     <% if @related_artworks.any? %>
       <div class="related-section">
         <div class="section-header">

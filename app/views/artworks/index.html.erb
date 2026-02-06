@@ -12,7 +12,6 @@
       <% end %>
     </div>
 
-    <!-- Category Filter -->
     <div class="category-pills">
       <%= link_to "All", artworks_path, class: "category-pill #{'active' unless params[:category]}" %>
       <% @categories.each do |cat| %>
@@ -20,7 +19,6 @@
       <% end %>
     </div>
 
-    <!-- Search -->
     <%= search_form_for @q, url: artworks_path, html: { class: "mb-lg", style: "margin-bottom:2rem;" } do |f| %>
       <div style="display:flex;gap:1rem;align-items:center;">
         <%= f.search_field :title_or_description_cont, placeholder: "Search artworks...", class: "form-input", style: "max-width:400px;" %>

@@ -3,7 +3,6 @@
 <div class="page-content">
   <div class="container">
     <div class="artwork-detail">
-      <!-- Artwork Image -->
       <div class="artwork-image-main">
         <% if @artwork.image.attached? %>
           <%= image_tag @artwork.image.variant(resize_to_limit: [1200, 1600]), alt: @artwork.title %>
@@ -14,7 +13,6 @@
         <% end %>
       </div>
 
-      <!-- Auction Info -->
       <div class="artwork-info">
         <div class="artwork-artist">
           <div class="artwork-artist-avatar">
@@ -49,7 +47,6 @@
           </div>
         </div>
 
-        <!-- Auction Panel -->
         <div class="auction-panel">
           <div class="auction-price-row">
             <div>
@@ -114,7 +111,6 @@
             </div>
           <% end %>
 
-          <!-- Watchlist -->
           <% if user_signed_in? && @auction.live? %>
             <div style="margin-top:var(--space-lg);padding-top:var(--space-lg);border-top:1px solid var(--color-border);">
               <% if @watching %>
@@ -126,7 +122,6 @@
           <% end %>
         </div>
 
-        <!-- Bid History -->
         <% if @bids.any? %>
           <div class="bid-history">
             <h3 class="bid-history-title">Bid History</h3>

@@ -7,7 +7,6 @@
       <h1 class="dashboard-welcome">Welcome, <%= current_user.first_name %></h1>
     </div>
 
-    <!-- Stats -->
     <div class="dashboard-grid">
       <div class="stat-card">
         <div class="stat-card-value"><%= @my_artworks.count %></div>
@@ -27,7 +26,6 @@
       </div>
     </div>
 
-    <!-- My Artworks -->
     <% if current_user.can_sell? %>
       <div class="section">
         <div class="section-header">
@@ -50,7 +48,6 @@
       </div>
     <% end %>
 
-    <!-- My Active Bids -->
     <div class="section">
       <div class="section-header">
         <h2>Recent Bids</h2>
@@ -74,7 +71,6 @@
       <% end %>
     </div>
 
-    <!-- Watched Auctions -->
     <% if @watched_auctions.any? %>
       <div class="section">
         <div class="section-header">

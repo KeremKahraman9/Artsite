@@ -1,6 +1,5 @@
 <% content_for(:title, "Discover & Collect Art") %>
 
-<!-- Hero Section -->
 <section class="hero">
   <div class="hero-bg">
     <div style="width:100%;height:100%;background:linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
@@ -36,7 +35,6 @@
   </div>
 </section>
 
-<!-- Featured Artworks -->
 <% if @featured_artworks.any? %>
   <section class="section">
     <div class="container">
@@ -59,7 +57,6 @@
   </section>
 <% end %>
 
-<!-- Live Auctions -->
 <% if @live_auctions.any? %>
   <section class="section">
     <div class="container">
@@ -80,7 +77,6 @@
   </section>
 <% end %>
 
-<!-- Recent Artworks -->
 <% if @recent_artworks.any? %>
   <section class="section">
     <div class="container">
@@ -103,7 +99,6 @@
   </section>
 <% end %>
 
-<!-- Categories -->
 <% if @categories.any? %>
   <section class="section">
     <div class="container">

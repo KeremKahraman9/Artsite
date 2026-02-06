@@ -16,6 +16,14 @@ class Artwork < ApplicationRecord
   scope :published, -> { where(status: :published) }
   scope :recent, -> { order(created_at: :desc) }
 
+  def self.ransackable_attributes(auth_object = nil)
+    %w[title description artist_id category_id status medium year featured created_at]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    %w[artist category]
+  end
+
   def to_param
     slug
   end

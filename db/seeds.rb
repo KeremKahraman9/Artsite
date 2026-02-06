@@ -1,6 +1,5 @@
 puts "Seeding database..."
 
-# Categories
 categories = [
   { name: "Painting", description: "Traditional and contemporary paintings in oil, acrylic, watercolor, and mixed media.", slug: "painting" },
   { name: "Sculpture", description: "Three-dimensional artworks in stone, metal, wood, and modern materials.", slug: "sculpture" },
@@ -21,7 +20,6 @@ end
 
 puts "  Created #{Category.count} categories"
 
-# Admin User
 admin = User.find_or_create_by!(email: "admin@artsite.com") do |u|
   u.first_name = "Admin"
   u.last_name = "User"
@@ -33,7 +31,6 @@ end
 
 puts "  Created admin: admin@artsite.com / password123"
 
-# Artists
 artists_data = [
   { first_name: "Elena", last_name: "Morisot", username: "elena_morisot", email: "elena@artsite.com", bio: "Contemporary abstract painter exploring color theory and emotional landscapes." },
   { first_name: "Marcus", last_name: "Chen", username: "marcus_chen", email: "marcus@artsite.com", bio: "Sculptor and installation artist working with recycled materials." },
@@ -56,7 +53,6 @@ end
 
 puts "  Created #{artists.count} artists"
 
-# Regular member
 member = User.find_or_create_by!(email: "collector@artsite.com") do |u|
   u.first_name = "Alex"
   u.last_name = "Rivera"
@@ -68,7 +64,6 @@ end
 
 puts "  Created collector: collector@artsite.com / password123"
 
-# Artworks
 painting = Category.find_by!(slug: "painting")
 sculpture = Category.find_by!(slug: "sculpture")
 photography = Category.find_by!(slug: "photography")
@@ -109,7 +104,6 @@ end
 
 puts "  Created #{artworks.count} artworks"
 
-# Auctions
 auction_artworks = artworks.sample(8)
 auctions = auction_artworks.each_with_index.map do |artwork, i|
   starting_price = [50, 100, 200, 500, 1000, 250, 150, 75][i] || 100
@@ -128,7 +122,6 @@ end
 
 puts "  Created #{auctions.count} auctions"
 
-# Bids
 bidders = [member, admin] + artists
 auctions.each do |auction|
   bid_count = rand(2..6)
@@ -153,7 +146,6 @@ end
 
 puts "  Created #{Bid.count} bids"
 
-# Watchlists
 auctions.sample(4).each do |auction|
   Watchlist.find_or_create_by!(user: member, auction: auction)
 end
